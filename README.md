@@ -1,1 +1,1 @@
-# -JavaScript-Algorithms-and-Data-Structures-Masterclass
+# JavaScript-Algorithms-and-Data-Structures-Masterclass
