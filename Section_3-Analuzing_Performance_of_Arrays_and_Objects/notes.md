@@ -59,12 +59,12 @@ let names = ["Michael", "Melissa", "Andrea"];
 let values = [true, {}, [], 2, "awesome"];
 ```
 
-## WHEN TO USE ARRAYS
+### WHEN TO USE ARRAYS
 
 - When you need order
 - When you need fast access / insertion and removal (sort of....)
 
-## Big O of Arrays
+### Big O of Arrays
 
 Insertion - It depends....
 
@@ -76,7 +76,7 @@ Access - O(1)
 
 **Let's see what we mean by that!**
 
-## Big O of Array Operations
+### Big O of Array Operations
 
 <em>You don't need to know all this...</em>
 
@@ -90,6 +90,6 @@ Access - O(1)
 - sort - O(N \* log N)
 - forEach/map/filter/reduce/etc. - O(N)
 
-## Limitations of Arrays
+### Limitations of Arrays
 
 Inserting at the beginning is not as easy as we might think! There are **more efficient** data structures for that!
