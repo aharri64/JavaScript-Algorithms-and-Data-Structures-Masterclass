@@ -4,9 +4,9 @@
 
 ## OBJECTIVES
 
-- Define what an algorithm is
-- Devise a plan to solve algorithms
-- Compare and contrast problem solving patterns including frequency counters, two pointer problems and divide and conquer
+-   Define what an algorithm is
+-   Devise a plan to solve algorithms
+-   Compare and contrast problem solving patterns including frequency counters, two pointer problems and divide and conquer
 
 ## Step 1: Understand the problem
 
@@ -35,11 +35,11 @@ Also...
 
 ### PROBLEM SOLVING
 
-- Understand the Problem
-- Explore Concrete Examples
-- Break It Down
-- Solve/Simplify
-- Look Back and Refactor
+-   Understand the Problem
+-   Explore Concrete Examples
+-   Break It Down
+-   Solve/Simplify
+-   Look Back and Refactor
 
 Note: many of these strategies are adapted from George Polya, whose book _How To Solve It_ is a great resource for anyone who wants to become a better problem solver
 
@@ -54,13 +54,13 @@ Note: many of these strategies are adapted from George Polya, whose book _How To
 ### Write a function which takes two numbers and returns their sum.
 
 1. Can I restate the problem in my own words?
-   - "implement addition"
+    - "implement addition"
 2. What are the inputs that go into the problem?
-   - ints?
-   - floats?
-   - what about string for large numbers
+    - ints?
+    - floats?
+    - what about string for large numbers
 3. What are the outputs that should come from the solution to the problem?
-   - int? float? string?
+    - int? float? string?
 4. Can the outputs be determined from the inputs? In other words, do I have enough information to solve the problem? (You may not be able to answer this question until you set about solving the problem. That's okay; it's still worth considering the question at this early stage.)
 
 5. How should I label the important pieces of data that are a part of the problem?
@@ -71,16 +71,16 @@ Coming up with examples can help you understand the problem better
 
 Examples also provide sanity checks that your eventual solution works how it should
 
-- User Stories!
-- Unit Tests!
+-   User Stories!
+-   Unit Tests!
 
 ### EXPLORE EXAMPLES
 
-- Start with Simple Examples
-  - Write it down, the easiest use cases
-- Progress to More Complex Examples
-- Explore Examples with Empty Inputs
-- Explore Examples with Invalid Inputs
+-   Start with Simple Examples
+    -   Write it down, the easiest use cases
+-   Progress to More Complex Examples
+-   Explore Examples with Empty Inputs
+-   Explore Examples with Invalid Inputs
 
 ### EXAMPLE
 
@@ -91,7 +91,7 @@ Write a function which takes in a string and returns counts of each character in
 
 Explicitly write out the steps you need to take.
 
-- This forces you to think about the code you'll write before you write it, and helps you catch any lingering conceptual issues or misunderstandings before you dive in and have to worry about details (e.g. language syntax) as well.
+-   This forces you to think about the code you'll write before you write it, and helps you catch any lingering conceptual issues or misunderstandings before you dive in and have to worry about details (e.g. language syntax) as well.
 
 ```js
 charCount("Hi There 1234")
@@ -122,3 +122,14 @@ function charCount(str) {
    // return object at end
 }
 ```
+
+## Step 4: Solve or Simplify
+
+Solve the problem... If you can't... Solve a simpler problem!
+
+### Simplify
+
+-   Find the core difficulty in what you're trying to do.
+-   Temporarily ignore that difficulty
+-   Write a simplified solution
+-   Then incorporate that difficulty back in
