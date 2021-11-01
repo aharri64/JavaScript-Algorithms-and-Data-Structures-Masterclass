@@ -256,3 +256,53 @@ search([1, 2, 3, 4, 5, 6], 4); // 3
 search([1, 2, 3, 4, 5, 6], 6); // 5
 search([1, 2, 3, 4, 5, 6], 11); // -1
 ```
+
+### A naive solution
+
+```js
+function search(arr, val) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === val) {
+            return i;
+        }
+    }
+    return -1;
+}
+```
+
+#### Linear Search
+
+**Time Complexity O(N)**
+
+### Refactor
+
+```js
+function search(array, val) {
+    let min = 0;
+    let max = array.length - 1;
+
+    while (min <= max) {
+        let middle = Math.floor((min + max) / 2);
+        let currentElement = array[middle];
+
+        if (array[middle] < val) {
+            min = middle + 1;
+        } else if (array[middle] > val) {
+            max = middle - 1;
+        } else {
+            return middle;
+        }
+    }
+
+    return -1;
+}
+```
+
+**Time Complexity - Log(N) - Binary Search!**
+
+## Recap
+
+-   Developing a problem solving approach is incredibly important
+-   Thinking about code before writing code will always make you solve problems faster
+-   Be mindful about problem solving patterns
+-   Using frequency counters, multiple pointers, sliding window and divide and conquer will help you reduce time and space complexity and help solve more challenging problems
