@@ -88,3 +88,29 @@ Can you spot the base case?
 Do you notice the different input?
 
 What would happen if we didn't return?
+
+### The ALL important `return` keyword
+
+```js
+function sumRange(num) {
+    if (num === 1) return 1;
+    return num + sumRange(num - 1);
+}
+```
+
+Let's break this down step by step!
+
+### sumRange with the call stack
+
+![sumRange with the call stack](./images/sumRange1.png)
+
+## Another example
+
+```js
+function factorial(num) {
+    if (num === 1) return 1;
+    return num * factorial(num - 1);
+}
+```
+
+Let's visualize the call stack!
