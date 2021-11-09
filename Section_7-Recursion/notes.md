@@ -114,3 +114,68 @@ function factorial(num) {
 ```
 
 Let's visualize the call stack!
+
+## Where things go wrong
+
+-   No base case
+-   Forgetting to return or returning the wrong thing!
+-   Stack overflow!
+
+```js
+function factorial(num) {
+    if (num === 1) return 1;
+    return num * factorial(num);
+}
+```
+
+```js
+function factorial(num) {
+    if (num === 1) console.log(1);
+    return num * factorial(num - 1);
+}
+```
+
+## HELPER METHOD RECURSION
+
+A helper recursion function is a non-recursive outer function that calls a recursive inner function.
+
+```js
+function outer(input) {
+    var outerScopedVariable = [];
+
+    function helper(helperInput) {
+        // modify the outerScopedVariable
+        helper(helperInput--);
+    }
+
+    helper(input);
+
+    return outerScopedVariable;
+}
+```
+
+### ANOTHER EXAMPLE
+
+Let's try to collect all of the odd values in an array!
+
+```js
+function collectOddValues(arr) {
+    let result = [];
+
+    function helper(helperInput) {
+        if (helperInput.length === 0) {
+            return;
+        }
+
+        if (helperInput[0] % 2 !== 0) {
+            result.push(helperInput[0]);
+        }
+
+        helper(helperInput.slice(1));
+    }
+
+    helper(arr);
+
+    return result;
+}
+```
