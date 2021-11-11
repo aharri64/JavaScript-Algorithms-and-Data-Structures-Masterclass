@@ -100,20 +100,6 @@ Let's search for 32
 -   Suppose you want to count the number of times a smaller string appears in a longer string
 -   A straightforward approach involves checking pairs of characters individually
 
-![search-algo-2](./images/search-algo-2.png)
-![search-algo-2](./images/search-algo-3.png)
-![search-algo-2](./images/search-algo-4.png)
-![search-algo-2](./images/search-algo-5.png)
-![search-algo-2](./images/search-algo-6.png)
-![search-algo-2](./images/search-algo-7.png)
-![search-algo-2](./images/search-algo-8.png)
-![search-algo-2](./images/search-algo-9.png)
-![search-algo-2](./images/search-algo-10.png)
-![search-algo-2](./images/search-algo-11.png)
-![search-algo-2](./images/search-algo-12.png)
-![search-algo-2](./images/search-algo-13.png)
-![search-algo-2](./images/search-algo-14.png)
-
 ## Pseudocode
 
 -   Loop over the longer string
@@ -122,3 +108,11 @@ Let's search for 32
 -   If the characters do match, keep going
 -   If you complete the inner loop and find a match, increment the count of matches
 -   Return the count
+
+# KMP String Search
+
+-   The Knutt-Morris-Pratt algorithm offers an improvement over the naive approach
+-   Published in 1977
+-   This algorithm more intelligently traverses the longer string to reduce the amount of redundant searching
+
+[KPM Example slides](https://cs.slides.com/colt_steele/tries-21#/21/0/1)
