@@ -52,9 +52,7 @@ Let's search for 12:
 -   Rather than eliminating one element at a time, you can eliminate half of the remaining elements at a time
 -   Binary search only works on sorted arrays!
 
-![binary-divide-and-conquer-1](./images/binary-divide-and-conquer-1.png)
-![binary-divide-and-conquer-2](./images/binary-divide-and-conquer-2.png)
-![binary-divide-and-conquer-3](./images/binary-divide-and-conquer-3.png)
+[Divide and Conquer Example Slides](https://cs.slides.com/colt_steele/tries-21#/9)
 
 ## Binary Search Pseudocode
 
@@ -85,6 +83,8 @@ Let's search for 12:
 
 [11]
 
+[Searching for 13 example slides](https://cs.slides.com/colt_steele/tries-21#/14)
+
 NOPE, NOT HERE!
 
 16 elements = 4 "steps"
@@ -92,13 +92,17 @@ NOPE, NOT HERE!
 ## To add another "step", we need to double the number of elements
 
 Let's search for 32
-![search-algo-1](./images/search-algo-1.png)
+
+[Search Example Slides](https://cs.slides.com/colt_steele/tries-21#/15)
+
 32 elements = 5 "steps" (worst case)
 
 ## Naive String Search
 
 -   Suppose you want to count the number of times a smaller string appears in a longer string
 -   A straightforward approach involves checking pairs of characters individually
+
+[Naive String Search Example Slides](https://cs.slides.com/colt_steele/tries-21#/17/0/1)
 
 ## Pseudocode
 
