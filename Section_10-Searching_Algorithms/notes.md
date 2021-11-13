@@ -44,17 +44,31 @@ Let's search for 12:
 
 #### My example
 
-````js
-function linearSearch(arr, val){
-  for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === val){
+```js
+function linearSearch(arr, val) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === val) {
             return arr[i];
         } else {
-        return -1;
+            return -1;
         }
     }
 }
 ```
+
+#### His Example
+
+```js
+function linearSearch(arr, val) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === val) {
+            return i;
+        }
+    }
+    return -1;
+}
+```
+
 ## Linear Search BIG O
 
 | O(n) | O(n)    | O(1)  |
@@ -175,7 +189,7 @@ function matchTable(word) {
     }
     return arr;
 }
-````
+```
 
 ## KMP - FTW!
 
