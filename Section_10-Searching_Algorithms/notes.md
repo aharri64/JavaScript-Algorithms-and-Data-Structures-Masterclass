@@ -71,7 +71,7 @@ function linearSearch(arr, val) {
 
 ## Linear Search BIG O
 
-| O(n) | O(n)    | O(1)  |
+| O(1) | O(n)    | O(n)  |
 | ---- | ------- | ----- |
 | Best | Average | Worst |
 
