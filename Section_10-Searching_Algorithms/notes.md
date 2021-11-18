@@ -148,6 +148,8 @@ Let's search for 32
 
 32 elements = 5 "steps" (worst case)
 
+This type of search is really good. But you can only do it if you have a sorted array. If you do not, then you have to use linear search.
+
 # Naive String Search
 
 -   Suppose you want to count the number of times a smaller string appears in a longer string
